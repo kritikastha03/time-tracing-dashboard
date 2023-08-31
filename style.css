@@ -1,0 +1,152 @@
+:root{
+    --body-bg: hsl(226, 43%, 10%);
+    --container-blue: hsl(235, 46%, 20%);
+    --profile-blue: hsl(246, 80%, 60%);
+    --text: hsl(235, 45%, 61%);
+    --week: hsl(236, 100%, 87%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+body{
+    background-color: var(--body-bg);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+span{
+    color: white;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: 470px;
+    width: 900px;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+
+
+.profile{
+    background-color: var(--container-blue);
+    grid-row: 1/3;
+}
+
+.profile__card{
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 30px;
+}
+
+.image{
+    height: 70px;
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.name{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+
+.profile__option{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.other__option{
+    color: var(--text);
+}
+
+
+
+.work{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url("images/icon-work.svg");
+}
+
+.play{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url("images/icon-play.svg");
+}
+
+.study{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url("images/icon-study.svg");
+}
+
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url("images/icon-exercise.svg");
+}
+
+.social{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url("images/icon-social.svg");
+}
+
+.selfcare{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url("images/icon-self-care.svg");
+}
+
+.ellipsis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card--backgroundimg{
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: top right;
+}
+
+
+.container__card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--container-blue);
+    padding: 10%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+.container__week,.container__text{
+    color: var(--week);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card__title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card__time{
+    font-size: 50px;
+    font-weight: 300;
+}
